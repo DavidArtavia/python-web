@@ -3,6 +3,7 @@
 import reflex as rx
 from link_bio.components.navbar import navbar
 from link_bio.components.footer import footer
+from link_bio.components.registro import registro_form
 from link_bio.views.header.header import header
 from link_bio.views.links.links import links
 import link_bio.styles.styles as styles
@@ -29,6 +30,8 @@ def index() -> rx.Component:
                 margin_y=Size.BIG.value,
             ),
         ),
+        registro_form(),
+       
         footer(),
     )
 
